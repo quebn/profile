@@ -1,0 +1,80 @@
+:root {
+  --color0:#000000;
+  --color7:#ffffff;
+  --background: var(--color7);
+  --foreground: var(--color0);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color0);
+    --foreground: var(--color7);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 0xProto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 80px;
+  gap: 64px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-row-start: 2;
+  gap: 4rem;
+}
+
+.profile-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color7);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.socials {
+  margin-top: 1rem;
+  list-style: none;
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li a svg {
+  color: var(--color7);
+}
+
+li a svg:hover {
+  transform: scale(1.2);
+}
