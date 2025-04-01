@@ -3,8 +3,13 @@
   --color7:#ffffff;
   --background: var(--color7);
   --foreground: var(--color0);
-
 }
+
+@font-face {
+  font-family: 0xProto;
+  src: url(../public/fonts/0xProto-Regular.ttf);
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,9 +26,9 @@
 
 html,
 body {
+  font-family: 0xProto;
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 0xProto, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -63,7 +68,7 @@ p {
 }
 
 .socials {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
   list-style: none;
   row-gap: 1rem;
   display: flex;
