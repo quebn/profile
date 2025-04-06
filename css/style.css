@@ -78,8 +78,9 @@ p {
 
 li a svg {
   color: var(--color7);
+  transition: all 200ms;
 }
 
 li a svg:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
